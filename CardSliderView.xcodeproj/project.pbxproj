@@ -13,9 +13,12 @@
 		5D2D84F128F06B8900DCD846 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2D84EF28F06B8900DCD846 /* Main.storyboard */; };
 		5D2D84F328F06B8A00DCD846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D2D84F228F06B8A00DCD846 /* Assets.xcassets */; };
 		5D2D84F628F06B8A00DCD846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D2D84F428F06B8A00DCD846 /* LaunchScreen.storyboard */; };
+		C72FCF9FACA776834709E05C /* Pods_CardSliderView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40C5A7604394FD146F9173BE /* Pods_CardSliderView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F2FD5DB48DD9AFCCD878F22 /* Pods-CardSliderView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardSliderView.release.xcconfig"; path = "Target Support Files/Pods-CardSliderView/Pods-CardSliderView.release.xcconfig"; sourceTree = "<group>"; };
+		40C5A7604394FD146F9173BE /* Pods_CardSliderView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardSliderView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D2D84E628F06B8900DCD846 /* CardSliderView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardSliderView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D2D84E928F06B8900DCD846 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D2D84EB28F06B8900DCD846 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		5D2D84F228F06B8A00DCD846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D2D84F528F06B8A00DCD846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D2D84F728F06B8A00DCD846 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C33B67004919A120162C88D /* Pods-CardSliderView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardSliderView.debug.xcconfig"; path = "Target Support Files/Pods-CardSliderView/Pods-CardSliderView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C72FCF9FACA776834709E05C /* Pods_CardSliderView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				5D2D84E828F06B8900DCD846 /* CardSliderView */,
 				5D2D84E728F06B8900DCD846 /* Products */,
+				9795FE60E2C8EC056FB5ACDF /* Pods */,
+				AC6287A66A3E85A274332BE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = CardSliderView;
 			sourceTree = "<group>";
 		};
+		9795FE60E2C8EC056FB5ACDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C33B67004919A120162C88D /* Pods-CardSliderView.debug.xcconfig */,
+				2F2FD5DB48DD9AFCCD878F22 /* Pods-CardSliderView.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		AC6287A66A3E85A274332BE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				40C5A7604394FD146F9173BE /* Pods_CardSliderView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D2D84FA28F06B8A00DCD846 /* Build configuration list for PBXNativeTarget "CardSliderView" */;
 			buildPhases = (
+				BDA773569143B68EA047E0E1 /* [CP] Check Pods Manifest.lock */,
 				5D2D84E228F06B8900DCD846 /* Sources */,
 				5D2D84E328F06B8900DCD846 /* Frameworks */,
 				5D2D84E428F06B8900DCD846 /* Resources */,
+				E473A6EA7787C2EA16FBAFFF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BDA773569143B68EA047E0E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CardSliderView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E473A6EA7787C2EA16FBAFFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CardSliderView/Pods-CardSliderView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CardSliderView/Pods-CardSliderView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CardSliderView/Pods-CardSliderView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D2D84E228F06B8900DCD846 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		5D2D84FB28F06B8A00DCD846 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C33B67004919A120162C88D /* Pods-CardSliderView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		5D2D84FC28F06B8A00DCD846 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F2FD5DB48DD9AFCCD878F22 /* Pods-CardSliderView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
